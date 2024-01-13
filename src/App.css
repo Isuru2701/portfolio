@@ -21,6 +21,31 @@
   width: min(90%, 1000px)
 }
 
+.Sub-header {
+  color: hsl(0, 0%, 40%);
+  font-size: 0.3em;
+  font-weight: lighter;
+  display: flex;
+  flex-direction: column;
+}
+
+.Icon-button {
+  background-color: transparent;
+  border: none;
+  color: inherit;
+  font: inherit;
+  cursor: pointer;
+  padding: 10px;
+  margin: 0;
+}
+
+.Icon-button:hover svg{
+  fill: black;
+}
+
+
+
+
 .Button-grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
