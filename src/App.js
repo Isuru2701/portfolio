@@ -1,10 +1,10 @@
 import { Button } from 'react-bootstrap';
 import './App.css';
 
-import GithubIcon from './components/GitHubIcon';
-import GmailIcon from './components/GmailIcon';
-import LinkedinIcon from './components/LinkedinIcon';
-import InstagramIcon from './components/InstagramIcon';
+import { ReactComponent as GmailIcon } from './icons/gmail.svg';
+import { ReactComponent as GithubIcon } from './icons/github.svg';
+import { ReactComponent as LinkedinIcon } from './icons/linkedin.svg';
+import { ReactComponent as InstagramIcon } from './icons/instagram.svg';
 
 function App() {
   return (
@@ -13,23 +13,27 @@ function App() {
         ISURU YAHAMPATH
 
         <span className="Sub-header">
-          Ruru ルール
+          <p style={{marginLeft: 100}}>Ruru ルール</p>
 
-          <Button className="Icon-button" name="gmail">
+          <span className='Sub-header-grid'>
+            <Button className="Icon-button" name="gmail">
               <GmailIcon />
-          </Button>
+            </Button>
 
-          <Button className="Icon-button" name="github">
+            <Button className="Icon-button" name="github">
+              <GithubIcon />
+            </Button>
 
-          </Button>
+            <Button className="Icon-button" name="linkedin">
+              <LinkedinIcon />
 
-          <Button className="Icon-button" name="linkedin">
+            </Button>
 
-          </Button>
-          
-          <Button className="Icon-button" name="instagram">
-          
-          </Button>
+            <Button className="Icon-button" name="instagram">
+              <InstagramIcon />
+
+            </Button>
+          </span>
         </span>
 
         <div className="Button-grid">
