@@ -12,16 +12,13 @@ function App() {
               About me
           </Button>
           
-          <Button className="Grid-Button" name="about">
-              About me
+          <Button className="Grid-Button" name="projects">
+              Projects
           </Button>
           
-          <Button className="Grid-Button" name="about">
-              About me
+          <Button className="Grid-Button" name="cv">
+              CV
           </Button>
-          
-
-
         </div>
       </header>
 
