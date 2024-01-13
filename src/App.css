@@ -12,11 +12,11 @@
   flex-direction: column;
   align-items:first baseline;
   padding: 20px 20px;
-  justify-content:center;
+  justify-content: center;
   font-family: Jetbrains Mono;
   font-weight: bold;
   text-align: left;
-  font-size: 7vh;
+  font-size: 10vh;
   color: white;
   width: min(90%, 1000px)
 }
@@ -25,48 +25,16 @@
   color: hsl(0, 0%, 40%);
   font-size: 0.4em;
   font-weight: lighter;
-  display: flex;
+  display: flex; 
   flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
   flex-wrap: wrap;
-  align-items: center;
-  width: fit-content;
+  text-align: left;
+  width: min(90%, 1000px);;
 }
-
-.Icon-button {
-  background-color: transparent;
-  border: none;
-  border-radius: 20px;
-  color: inherit;
-  font: inherit;
-  align-items: center;
-  padding: 10px;
-  margin: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.Sub-header-grid {
-  display: flex;
-  flex-direction: row;
-  width: min(90%, 1000px);
-  margin-left: 10px
-
-  
-}
-
-.Icon-button:hover {
-  background-color: #ffffff;
-}
-
-.Icon-button:hover svg path{
-  fill: black !important;
-}
-
-
 
 .Button-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
   display: flex;
   flex-direction:row;
   flex-wrap: wrap;
@@ -97,4 +65,33 @@
 .Grid-Button:hover {
   background-color: #F8F8F8;
   color:#080808
+}
+
+.Icon-button {
+  background-color: transparent;
+  border: none;
+  border-radius: 20px;
+  color: inherit;
+  font: inherit;
+  justify-content: center;
+  padding: 5px;
+  margin: 10px;
+  width: min(10vw, 30px);
+}
+
+.Sub-header-grid {
+  display: flex ;
+  flex-direction: row;
+  
+  margin-left: 10px;
+
+  
+}
+
+.Icon-button:hover {
+  background-color: #ffffff;
+}
+
+.Icon-button:hover svg path{
+  fill: black !important;
 }

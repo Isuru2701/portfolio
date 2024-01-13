@@ -13,9 +13,8 @@ function App() {
         ISURU YAHAMPATH
 
         <span className="Sub-header">
-          <p style={{marginLeft: 100}}>Ruru ルール</p>
-
-          <span className='Sub-header-grid'>
+          Ruru ルール
+          <span>
             <Button className="Icon-button" name="gmail">
               <GmailIcon />
             </Button>
