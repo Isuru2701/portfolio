@@ -7,6 +7,27 @@ import { ReactComponent as LinkedinIcon } from './icons/linkedin.svg';
 import { ReactComponent as InstagramIcon } from './icons/instagram.svg';
 
 function App() {
+
+  //redirects
+  const redirect = (name) => {
+    switch (name) {
+      case "gmail":
+        window.open("mailto:isuruyahampath1@gmail.com", '_blank');
+        break;
+      case "github":
+        window.open("https://www.github.com/Isuru2701", '_blank');
+        break;
+      case "linkedin":
+        window.open("https://www.linkedin.com/in/isuru-yahampath/", '_blank');
+        break;
+      case "instagram":
+        window.open("https://www.instagram.com/ruwuru2701", '_blank');
+        break;
+      default:
+        break;
+    }
+  }
+
   return (
     <div className="App">
       <header className="App-header">
@@ -15,20 +36,20 @@ function App() {
         <span className="Sub-header">
           Ruru ルール
           <span>
-            <Button className="Icon-button" name="gmail">
+            <Button className="Icon-button" name="gmail" onClick={() => redirect("gmail")}>
               <GmailIcon />
             </Button>
 
-            <Button className="Icon-button" name="github">
+            <Button className="Icon-button" name="github" onClick={() => redirect("github")}>
               <GithubIcon />
             </Button>
 
-            <Button className="Icon-button" name="linkedin">
+            <Button className="Icon-button" name="linkedin" onClick={() => redirect("linkedin")}>
               <LinkedinIcon />
 
             </Button>
 
-            <Button className="Icon-button" name="instagram">
+            <Button className="Icon-button" name="instagram" onClick={() => redirect("instagram")}>
               <InstagramIcon />
 
             </Button>
