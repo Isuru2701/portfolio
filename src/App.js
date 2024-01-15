@@ -1,10 +1,10 @@
 import { Button } from 'react-bootstrap';
-import './App.css';
+import './assets/styles/App.css';
 
-import { ReactComponent as GmailIcon } from './icons/gmail.svg';
-import { ReactComponent as GithubIcon } from './icons/github.svg';
-import { ReactComponent as LinkedinIcon } from './icons/linkedin.svg';
-import { ReactComponent as InstagramIcon } from './icons/instagram.svg';
+import { ReactComponent as GmailIcon } from './assets/icons/gmail.svg';
+import { ReactComponent as GithubIcon } from './assets/icons/github.svg';
+import { ReactComponent as LinkedinIcon } from './assets/icons/linkedin.svg';
+import { ReactComponent as InstagramIcon } from './assets/icons/instagram.svg';
 
 function App() {
 
